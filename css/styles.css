@@ -1,0 +1,187 @@
+
+  header, .alert{
+    z-index: 100;
+  }
+
+  h1{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* DarkMode */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 90%;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.sliderbg {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.sliderbg:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .sliderbg {
+    background-color: #2196F3;
+}
+
+input:focus + .sliderbg {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .sliderbg:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+  /* Rounded sliders */
+.sliderbg.round {
+    border-radius: 34px;
+}
+
+.sliderbg.round:before {
+    border-radius: 50%;
+}
+/* END boton darkMode */
+/* -------------------banner-------------------- */
+
+.lala{
+  display: flex;
+}
+
+.container-slider{ 
+  margin: auto;
+  /* width: 90%; */
+  max-width: 900px;
+  margin: 0px 10px 0 90px ;
+  overflow: hidden;
+  /*box-shadow: 0 0 0 10px #fff,
+              0 15px 50px;*/
+  position: relative;
+}
+
+.slider{
+  display:flex;
+  width: 400%;
+  height: 90%;
+  margin-left: -100%;
+}
+
+.slider__section{
+  width: 100%;
+}
+
+.slider__img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background:rgba(255, 255, 255, 0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__btn:hover{
+  background: #fff;
+}
+
+.slider__btn--left{
+left: 10px;
+}
+
+.slider__btn--right{
+  right: 10px;
+}
+/* End Banner */
+
+  .description{
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+  }
+  .description:hover{
+    height: 80px;
+  }
+  .carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .table__productos{
+    display: flex;
+  }
+  .table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+  .hide, .remove{
+    display: none;
+  }
+
+  #fotoInicio{
+    margin-left: 20%;
+    max-width: 900px;
+    height: 100%;
+  }
+
+  .color .vertical{
+    width: 150px;
+    height: 100%;
+    margin: auto;
+  }
+
+  .color .horizontal{
+    width: 95%;
+    margin: auto;
+  }
